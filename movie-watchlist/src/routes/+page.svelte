@@ -1,0 +1,64 @@
+<div class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">Willkommen zur Movie Watchlist!</h1>
+      <p class="hero-text">
+        Entdecke spannende Filme und erstelle deine persönliche Watchlist.
+      </p>
+      <a href="/movies" class="btn btn-primary btn-lg">Jetzt entdecken</a>
+    </div>
+  </div>
+  
+  <style>
+    /* Hintergrundbereich */
+.hero-section {
+    height: 100vh; /* Vollbildhöhe */
+    background-image: url('/images/hero-background.png'); /* Hintergrundbild */
+    background-size: cover; /* Bild vollständig anzeigen */
+    background-position: center; /* Zentriere das Bild */
+    display: flex;
+    align-items: center; /* Vertikal zentrieren */
+    justify-content: center; /* Horizontal zentrieren */
+    text-align: center; /* Text zentrieren */
+    color: white; /* Weiße Schrift */
+  }
+  
+  /* Inhalt im Hero-Bereich */
+  .hero-content {
+    max-width: 600px; /* Begrenzte Breite für besseren Fokus */
+    background-color: rgba(0, 0, 0, 0.6); /* Transparenter schwarzer Hintergrund */
+    padding: 20px;
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Schatteneffekt */
+  }
+  
+  /* Titel-Style */
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Text-Style */
+  .hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  /* Button-Style */
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  /* Button Hover-Effekt */
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+</style>
+  

@@ -1,0 +1,41 @@
+/* Container für die Movie-Karten */
+.movie-grid {
+    display: flex; /* Aktiviert das Flexbox-Layout */
+    flex-wrap: wrap; /* Karten umbrechen, falls kein Platz ist */
+    justify-content: space-between; /* Lücken zwischen Karten gleichmäßig verteilen */
+    gap: 20px; /* Abstand zwischen den Karten */
+    color: violet;
+  }
+  
+  /* Einzelne Karte */
+  .movie-card {
+    flex: 1 1 calc(25% - 20px); /* 4 Karten pro Reihe, mit Abstand */
+    max-width: calc(25% - 20px); /* Maximale Breite einer Karte */
+    background-color: #1e1e1e; /* Dunkler Hintergrund */
+    color: orange;
+    border: 2px solid #444; /* Rahmen um die Karte */
+    border-radius: 8px; /* Abgerundete Ecken */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover-Effekt */
+  .movie-card:hover {
+    transform: scale(1.05); /* Vergrößerung bei Hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Größerer Schatten bei Hover */
+  }
+  
+  /* Poster-Bild */
+  .movie-poster {
+    width: 100%; /* Bild passt zur Breite der Karte */
+    height: 300px; /* Einheitliche Höhe für alle Bilder */
+    object-fit: cover; /* Bild wird proportional angepasst */
+  }
+  
+  /* Text-Bereich */
+  .card-body {
+    padding: 15px; /* Abstand im Textbereich */
+    text-align: center; /* Zentriert den Text */
+  }
+  
